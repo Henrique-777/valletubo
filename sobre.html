@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar" data-aos="fade-down">
+            <div class="container">
+                <!-- Botão Menu hambúrguer (visível apenas no mobile) -->
+                <div class="hamburguer-menu" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo-grande-svg.svg" alt="Logo Valletubo">    
+                    </a>
+                </div>
+
+                <!-- Menu de navegação da Navbar -->
+                <ul id="menu" class="menu">
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li class="dropdown">
+                        <a href="produtos.html" class="dropdown-toggle">PRODUTOS<span class="arrow">▼</span></a>
+                        <ul class="submenu">
+                            <li><a href="catalogo-mangueiras.html">MANGUEIRAS E CONEXÕES</a></li>
+                            <li><a href="irrigacao.html">IRRIGAÇÃO - LINHA AZUL</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="empresa-imagem">
+        <div class="overlay">
+            <h2>Sobre nós</h2>
+            <p>Conheça a história e os valores que fazem da nossa empresa referência em soluções para sistemas de encanamento.</p>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <div class="sobre-conteudo">
+            <div class="container">
+            <h2>Fundação</h2>
+            <p>
+                Fundada em 2013 em Petrolina, a Fábrica Valletubo iniciou suas atividades fabricando 
+                mangueiras de polietileno com tecnologia própria. Três anos depois, transferiu-se para Abaré,
+                Bahia, onde ampliou suas instalações e diversificou sua produção, incluindo tubos de PVC para
+                irrigação em diversas cores. Em 2022, a introdução de uma injetora marcou uma nova etapa,
+                permitindo a fabricação de conexões, microtubos e microaspersores. Com foco em inovação e
+                qualidade, a Valletubo oferece soluções eficientes para irrigação, priorizando a satisfação de
+                seus clientes.
+            </p>
+            </div>
+
+            <div class="container">
+            <h2>Nossa História</h2>
+            <p>
+                A Fábrica Valletubo começou em 2013, em Petrolina, produzindo mangueiras de polietileno com
+                uma máquina desenvolvida pelo fundador. Em 2016, mudou-se para Abaré, Bahia, onde expandiu
+                suas operações, incluindo tubos de PVC para irrigação. Em 2022, passou a fabricar conexões,
+                microtubos e microaspersores, ampliando seu portfólio para atender às demandas do mercado
+                agrícola.
+                </p>
+            </div>
+
+        </div>
+        
+        <div class="valores">
+            <div class="card" data-aos="fade-right">
+                <img src="/assets/img/missao-icon.svg">
+                <h3>Missão</h3>
+                <p>Nossa missão é oferecer soluções inovadoras e de alta qualidade para sistemas de irrigação, 
+                   contribuindo para a eficiência e sustentabilidade do agronegócio. Buscamos sempre atender 
+                   às necessidades dos nossos clientes com produtos confiáveis e um atendimento personalizado.</p>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <img src="/assets/img/visao-icon.svg">
+                <h3>Visão</h3>
+                <p>Ser referência nacional em fabricação de sistemas de irrigação, reconhecida pela excelência 
+                   dos nossos produtos e pelo compromisso com o desenvolvimento sustentável do setor agrícola.</p>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="/assets/img/qualidade-icon.svg">
+                <h3>Qualidade</h3>
+                <p>Comprometidos com a excelência, garantimos produtos que atendem aos mais altos 
+                    padrões de qualidade.</p>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <img src="/assets/img/sustentabilidade-icon.svg">
+                <h3>Sustentabilidade</h3>
+                <p>Priorizamos práticas sustentáveis que minimizem o impacto ambiental e 
+                    promovam a conservação dos recursos naturais.</p>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="/assets/img/clientes-icon.svg">
+                <h3>Clientes</h3>
+                <p>Nosso foco é a satisfação dos clientes, oferecendo atendimento personalizado 
+                    e soluções que atendam às suas necessidades específicas.</p>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <img src="/assets/img/integridade-icon.svg">
+                <h3>Integridade</h3>
+                <p>Atuamos com ética e transparência em todas as nossas relações, garantindo 
+                   confiança e respeito. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title"><img src="/assets/img/logo-vt-branca.svg"></h3>
+                <p class="footer-description">Oferecemos soluções inovadoras e de alta
+                    qualidade para sistemas de irrigação, contribuindo para a eficiência 
+                    e sustentabilidade do agronegócio.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Menu</h4>
+                <ul class="footer-list">
+                    <li><a href="index.html" class="footer-link">Início</a></li>
+                    <li><a href="sobre.html" class="footer-link">Sobre</a></li>
+                    <li><a href="catalogo-mangueiras.html" class="footer-link">Mangueiras e Conexões</a></li>
+                    <li><a href="irrigacao.html" class="footer-link">Irrigação</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Fale conosco</h4>
+                <ul class="footer-list">
+                    <li><a href="tel:+558781712943" class="footer-contact">(87) 9 8171-2943</a></li>
+                    <li><a href="contato.html" class="footer-contact" >Contato</a></li>
+                    <li>
+                        <a 
+                        href="https://www.instagram.com/valletuboindustria" 
+                        class="footer-contact"
+                        target="_blank"
+                        rel="noopener noreferrer" >
+                        @valletuboindustria
+                        </a>
+                        <li class="footer-icons">
+                            <!-- Botão Instagram-->
+                            <a           
+                                class="footer-contact"             
+                                href="https://www.instagram.com/valletuboindustria" 
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <!-- Botão WhatsApp-->
+                            <a 
+                                class="footer-contact"
+                                href="https://wa.me/5587981712943?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações%20sobre%20tubos%20e%20conexões." 
+                                target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+
+                            <!-- Botão E-mail-->
+                            <a 
+                                class="footer-contact"
+                                href="mailto:vendas@valletubo.com.br">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            
+                            <!-- Botão Telefone-->
+                            <a 
+                                class="footer-contact"
+                                href="tel:+558781712943">
+                                <i class="fa-solid fa-phone"></i>        
+                            </a>
+                            
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="javascript:void(0)" class="footer-privacy">Aviso de privacidade</a>
+            <a class="footer-rights">&copy; 2024 Valletubo. Todos os direitos reservados.</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdown = document.querySelector('.dropdown');
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('open');
+            });
+        });
+
+        //Função para abrir o menu hamburguer no mobile
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('open'); //Adiciona ou remove a classe "open"
+        }
+
+        // Função p/ mostrar pop-up de aviso de privacidade
+        document.querySelector('.footer-privacy').addEventListener('click', function () {
+            Swal.fire({
+                title: 'Aviso de privacidade.',
+                text: 'Este site utiliza cookies para garantir que você tenha uma melhor experiência.',
+                icon: 'info',
+                confirmButtonText: 'Entendi!',
+                confirmButtonColor: '#007bff',
+            });
+        });
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // Duração das animações (em ms)
+            once: true, // Anima apenas uma vez ao entrar na tela
+            offset: 50 // Distância do elemento para iniciar a animação
+        });
+    </script>
+
+</body>
+</html>

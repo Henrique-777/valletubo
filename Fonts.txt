@@ -1,0 +1,8 @@
+FONTE GLOBAL: Encode Sans
+
+MENU: Encode Sans Light 300
+
+TÍTULOS DOS PRODUTOS NO CATÁLOGO: Encode Sans Regular 400
+
+Box inicial com Imagem e texto: Encode Sans Bold 700
+Subtexto: Encode Sans Light 300

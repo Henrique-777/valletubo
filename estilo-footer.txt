@@ -1,0 +1,98 @@
+/* Estilos gerais do rodapé */
+.footer {
+  background-color: #005a9c; /* Cor de fundo azul */
+  color: white; /* Texto branco */
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px; /* Largura máxima do container */
+  margin: 0 auto; /* Centralizar o conteúdo */
+  display: flex;
+  justify-content: space-between; /* Espaçamento uniforme entre seções */
+  flex-wrap: wrap; /* Permitir que os itens fiquem em várias linhas se necessário */
+}
+
+/* Seções do rodapé */
+.footer-section {
+  flex: 1; /* Cada seção ocupa o mesmo espaço disponível */
+  min-width: 200px; /* Largura mínima */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.footer-title img {
+  max-width: 150px; /* Ajuste o tamanho do logo */
+}
+
+.footer-description {
+  line-height: 1.5; /* Espaçamento entre linhas */
+  margin: 10px 0 0;
+}
+
+.footer-list {
+  list-style: none; /* Remove marcadores das listas */
+  padding: 0; /* Remove espaçamento interno */
+  margin: 0; /* Remove espaçamento externo */
+}
+
+.footer-list li {
+  margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+.footer-link {
+  color: white; /* Cor dos links */
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 1em; /* Tamanho da fonte */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.footer-contact {
+  color: white; /* Cor do telefone */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 1.1em; /* Tamanho levemente maior para destaque */
+}
+
+.footer-contact:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Espaçamento superior */
+  border-top: 1px solid #004080; /* Linha separadora no topo */
+  padding-top: 10px; /* Espaçamento interno superior */
+  font-size: 0.9em; /* Texto menor */
+}
+
+.footer-privacy {
+  color: white; /* Cor do link */
+  text-decoration: none; /* Remove sublinhado */
+  display: block; /* Exibe o aviso em uma linha separada */
+  margin-bottom: 5px; /* Espaçamento inferior */
+}
+
+.footer-privacy:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.footer-rights {
+  margin: 0; /* Remove espaçamento extra */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Empilha as seções verticalmente */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .footer-section {
+    text-align: center; /* Centraliza o texto das seções */
+    margin-bottom: 20px; /* Espaçamento entre as seções */
+  }
+}

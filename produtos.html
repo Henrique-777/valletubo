@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Tubos e Conexões</title>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="container">
+                    <!-- Botão Menu hambúrguer (visível apenas no mobile) -->
+                    <div class="hamburguer-menu" onclick="toggleMenu()">
+                        &#9776;
+                    </div>
+    
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="logo-grande-svg.svg" alt="Logo Valletubo">    
+                        </a>
+                    </div>
+
+                <!-- Menu de navegação Navbar -->
+                <ul id="menu" class="menu">
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li class="dropdown">
+                        <a href="produtos.html" class="dropdown-toggle">PRODUTOS<span class="arrow"> ▼</span></a>
+                        <ul class="submenu">
+                            <li><a href="catalogo-mangueiras.html">MANGUEIRAS E CONEXÕES</a></li>
+                            <li><a href="irrigacao.html">IRRIGAÇÃO - LINHA AZUL</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção cabeçalho com imagem -->
+    <section class="catalogo-imagem">
+        <div class="overlay">
+            <h2>CONHEÇA NOSSAS LINHAS DE PRODUTOS</h2>
+            <p>Descubra nossas soluções completas para sistemas de irrigação de alta eficiência e durabilidade.</p>
+        </div>
+    </section>
+
+    <section class="produtos">
+        <div class="container">
+            <div class="grid">
+                <!--<div class="card">
+                    <img src="agua-fria.png" alt="Produto 1">
+                    <h3>Água fria</h3>
+                    <p>Duráveis e resistentes.</p>
+                    <a href="agua-fria.html" class="btn">Saiba mais</a>
+                </div> -->
+                <div class="card" data-aos="fade-right">
+                    <img src="assets/img/mangueira-polietileno.png" alt="Produto 2">
+                    <h3>Mangueiras e Conexões</h3>
+                    <p>Durabilidade e resistência para qualquer aplicação.</p>
+                    <a href="catalogo-mangueiras.html" class="btn">Saiba mais</a>
+                </div>
+                <div class="card" data-aos="fade-left">
+                    <img src="assets/img/conexao.png" alt="Produto 3">
+                    <h3>Irrigação</h3>
+                    <p>Ideais para sistemas de irrigação e abastecimento.</p>
+                    <a href="irrigacao.html" class="btn">Saiba mais</a>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" data-aos="fade-up">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title"><img src="/assets/img/logo-vt-branca.svg"></h3>
+                <p class="footer-description">Oferecemos soluções inovadoras e de alta
+                    qualidade para sistemas de irrigação, contribuindo para a eficiência 
+                    e sustentabilidade do agronegócio.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Menu</h4>
+                <ul class="footer-list">
+                    <li><a href="index.html" class="footer-link">Início</a></li>
+                    <li><a href="sobre.html" class="footer-link">Sobre</a></li>
+                    <li><a href="catalogo-mangueiras.html" class="footer-link">Mangueiras e Conexões</a></li>
+                    <li><a href="irrigacao.html" class="footer-link">Irrigação</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Fale conosco</h4>
+                <ul class="footer-list">
+                    <li><a href="tel:+558781712943" class="footer-contact">(87) 9 8171-2943</a></li>
+                    <li><a href="contato.html" class="footer-contact" >Contato</a></li>
+                    <li>
+                        <a 
+                        href="https://www.instagram.com/valletuboindustria" 
+                        class="footer-contact"
+                        target="_blank"
+                        rel="noopener noreferrer" >
+                        @valletuboindustria</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="javascript:void(0)" class="footer-privacy">Aviso de privacidade</a>
+            <a class="footer-rights">&copy; 2024 Valletubo. Todos os direitos reservados.</a>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdown = document.querySelector('.dropdown');
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('open');
+            });
+        });
+
+        //Função para abrir o menu hamburguer no mobile
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('open'); //Adiciona ou remove a classe "open"
+        }
+
+        // Função p/ mostrar pop-up de aviso de privacidade
+        document.querySelector('.footer-privacy').addEventListener('click', function () {
+            Swal.fire({
+                title: 'Aviso de privacidade.',
+                text: 'Este site utiliza cookies para garantir que você tenha uma melhor experiência.',
+                icon: 'info',
+                confirmButtonText: 'Entendi!',
+                confirmButtonColor: '#007bff',
+            });
+        });             
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // Duração das animações (em ms)
+            once: true, // Anima apenas uma vez ao entrar na tela
+            offset: 100 // Distância do elemento para iniciar a animação
+        });
+    </script>
+
+</body>
+</html>

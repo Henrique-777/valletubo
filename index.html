@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valletubo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+</head>
+<body id="topo">
+    <header>
+        <nav class="navbar" data-aos="fade-down">
+            <div class="container">
+                <!-- Botão Menu hambúrguer (visível apenas no mobile) -->
+                <div class="hamburguer-menu" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo-grande-svg.svg" alt="Logo Valletubo">    
+                    </a>
+                </div>
+
+                <!-- Menu de navegação da navbar -->
+                <ul id="menu" class="menu" >
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li class="dropdown">
+                        <a href="produtos.html" class="dropdown-toggle">PRODUTOS<span class="arrow"> ▼</span></a>
+                        <ul class="submenu">
+                            <li><a href="catalogo-mangueiras.html">MANGUEIRAS E CONEXÕES</a></li>
+                            <li><a href="irrigacao.html">IRRIGAÇÃO - LINHA AZUL</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção da Capa do Site -->
+    <section class="capa">
+        <div class="container">
+            <div class="botao-central" data-aos="fade-up">
+                <a href="#produtos">
+                    <span id="btn-produtos" class="button-text">Conheça nossos produtos</span>    
+                </a>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Seção de benefícios dos produtos -->
+    <section class="beneficios" data-aos="fade-left">
+        <div class="container">
+                <div class="grid">
+
+                    <!-- Eficiência -->
+                    <a style="text-decoration: none;">
+                        <div class="card">
+                            <img src="/assets/img/micro-aspersor-2.png">
+                            <h3>Eficiente</h3>
+                            <p>Irrigação com precisão, reduzindo o desperdício de água.</p>
+                        </div>    
+                    </a>
+
+                    <!-- Durabilidade -->
+                    <a style="text-decoration: none;">
+                        <div class="card">
+                            <img src="/assets/img/tubo-pvc-2.png">
+                            <h3>Durável</h3>
+                            <p>Fabricado com os materiais mais resistentes do mercado, resistindo ao tempo e uso contínuo.</p>
+                        </div>    
+                    </a>
+
+                    <!-- Fácil de instalar -->
+                    <a style="text-decoration: none;">
+                        <div class="card">
+                            <img src="/assets/img/registro_soldavel-2.png">
+                            <h3>Fácil de instalar</h3>
+                            <p>Fácil de instalar, em poucos passos, ficando pronto para uso em qualquer sistema de irrigação.</p>
+                        </div>    
+                    </a>
+
+                    <!-- Versátil -->
+                    <a style="text-decoration: none;">
+                        <div class="card">
+                            <img src="/assets/img/tubo-versatil.png">
+                            <h3>Versátil</h3>
+                            <p>Ideal para uso em: hortas, pomares e grandes plantações.</p>
+                        </div>    
+                    </a>
+
+                </div>    
+            
+        </div>
+    </section>
+
+    <!-- Resumo do Catálogo -->
+    <section class="catalogo" id="produtos" data-aos="fade-up" data-name="produtos">
+        <div class="container">
+            <h2>NOSSOS PRODUTOS</h2>
+            <p>Explore uma ampla gama de produtos de alta qualidade, desenvolvidos para atender às necessidades mais exigentes do mercado.</p>
+            <div class="grid">
+
+                <!-- Card Mangueiras e Conexões-->
+                <a href="catalogo-mangueiras.html" style="text-decoration: none;"
+                    itemscope itemtype="https://schema.org/Product">
+                    <div class="card">
+                        <img src="assets/img/mangueira-polietileno.png" alt="Produto 1" 
+                            itemprop="image">
+                        <h3>Mangueira de polietileno</h3>
+                        <p>Qualidade garantida para aplicações em todas as situações.</p>
+                        <meta itemprop="brand" content="Valletubo">
+                        <meta itemprop="category" content="Mangueiras e Conexões">
+                    </div>
+                </a>
+                
+                <a href="catalogo-mangueiras.html" style="text-decoration: none;">
+                    <div class="card">
+                        <img src="assets/img/micro-aspersor.png" alt="Produto 2">
+                        <h3>Micro aspersores</h3>
+                        <p>Soluções para todos os tipos de sistemas de irrigação.</p>
+                    </div>
+                </a>
+
+                <a href="catalogo-mangueiras.html" style="text-decoration: none;">
+                    <div class="card">
+                        <img src="assets/img/microtubo.png" alt="Produto 3">
+                        <h3>Microtubos</h3>
+                        <p>Qualidade garantida para aplicações em todas as situações.</p>
+                    </div>
+                </a>
+                
+                <a href="irrigacao.html" style="text-decoration: none;">
+                    <div class="card">
+                        <img src="assets/img/tubo-rigido.png" alt="Produto 4">
+                        <h3>Tubos rígidos</h3>
+                        <p>Soluções para todos os tipos de sistemas de irrigação.</p>
+                    </div>
+                </a>
+        
+                <a href="irrigacao.html" style="text-decoration: none;">
+                    <div class="card">
+                        <img src="assets/img/registro-esfera-rosca-interna.jpg" alt="Produto 5">
+                        <h3>Registros de esfera</h3>
+                        <p>Qualidade garantida para aplicações em todas as situações.</p>
+                    </div>
+                </a>
+                
+                <a href="irrigacao.html" style="text-decoration: none;">
+                    <div class="card">
+                        <img src="assets/img/joelho-90-soldavel.png" alt="Produto 6">
+                        <h3>Joelhos</h3>
+                        <p>Soluções para todos os tipos de sistemas de irrigação.</p>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="ver-mais">
+                <a href="produtos.html" class="btn">Ver Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Imagem da Empresa -->
+    <section class="empresa-imagem" >
+        <div class="container">
+            <div class="text">
+                <h2>Bem vindo à Valletubo</h2>
+                <p>Excelência em soluções para sistemas de irrigação, abastecimento e encanamento.</p>
+                <a href="produtos.html" class="btn" data-aos="fade-up">CONHEÇA NOSSOS PRODUTOS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fornecedores Section -->
+    <section class="fornecedores" data-name="fornecedores">
+        <div class="container">
+            <h2>CONHEÇA NOSSOS FORNECEDORES</h2>
+                <p>Valorizamos parcerias com fornecedores que compartilham nossos valores de qualidade, 
+                    inovação e eficiência. Juntos, garantimos produtos e serviços que atendem às 
+                    necessidades dos nossos clientes com excelência.</p>
+                <div class="grid" data-aos="fade-up">
+                    <div class="card">
+                        <img src="assets/img/braskem-logo.svg" alt="Braskem">
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/baerlocher-logo.svg" alt="Baerlocher">
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/carbomil-logo.svg" alt="Carbomil">
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/piramidal-logo.svg" alt="Piramidal">
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/colormaster-logo.png" alt="Color Master">
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/dry-color.svg" alt="Dry Color">
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+        <div class="container">
+            <h2>Soluções em Tubos e Conexões</h2>
+            <p>Fabricamos qualidade e inovação para sistemas de irrigação, abastecimento e encanamento.</p>
+            <a href="produtos.html" class="btn">VER CATÁLOGO</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" data-aos="fade-up">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title"><img src="/assets/img/logo-vt-branca.svg"></h3>
+                <p class="footer-description">Oferecemos soluções inovadoras e de alta
+                    qualidade para sistemas de irrigação, contribuindo para a eficiência 
+                    e sustentabilidade do agronegócio.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Menu</h4>
+                <ul class="footer-list">
+                    <li><a href="sobre.html" class="footer-link">Sobre</a></li>
+                    <li><a href="catalogo-mangueiras.html" class="footer-link">Mangueiras e Conexões</a></li>
+                    <li><a href="irrigacao.html" class="footer-link">Irrigação</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Fale conosco</h4>
+                <ul class="footer-list">
+                    <li><a href="tel:+558781712943" class="footer-contact">(87) 9 8171-2943</a></li>
+                    <li><a href="contato.html" class="footer-contact" >Contato</a></li>
+                    <li>
+                        <a 
+                        href="https://www.instagram.com/valletuboindustria" 
+                        class="footer-contact"
+                        target="_blank"
+                        rel="noopener noreferrer" >
+                        @valletuboindustria
+                        </a>
+                        <li class="footer-icons">
+                            <!-- Botão Instagram-->
+                            <a           
+                                class="footer-contact"             
+                                href="https://www.instagram.com/valletuboindustria" 
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <!-- Botão WhatsApp-->
+                            <a 
+                                class="footer-contact"
+                                href="https://wa.me/5587981712943?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações%20sobre%20tubos%20e%20conexões." 
+                                target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+
+                            <!-- Botão E-mail-->
+                            <a 
+                                class="footer-contact"
+                                href="mailto:vendas@valletubo.com.br">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            
+                            <!-- Botão Telefone-->
+                            <a 
+                                class="footer-contact"
+                                href="tel:+558781712943">
+                                <i class="fa-solid fa-phone"></i>        
+                            </a>
+                            
+                        </li>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="javascript:void(0)" class="footer-privacy">Aviso de privacidade</a>
+            <a class="footer-rights">&copy; 2024 Valletubo. Todos os direitos reservados.</a>
+        </div>
+
+        <div itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" content="Valletubo">
+            <meta itemprop="url" content="https://www.valletubo.com">
+            <meta itemprop="logo" content="assets/img/logo-grande-svg">
+            <meta itemprop="telephone" content="+55-87-8171-2943">
+            <meta itemprop="adress" content="Ibó, Abaré, Bahia, Brasil">
+        </div>
+
+    </footer>
+
+    <div id="btn-topo">
+        <a href="#topo">↑</a>
+    </div>
+
+    <!-- JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdown = document.querySelector('.dropdown');
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+            const submenu = dropdown.querySelector('.submenu');
+
+            //Detecta se está no mobile
+            const isMobile = () => window.innerWidth <= 768; //Ajustar conforme necessário
+
+            //Previne direcionamento a outra página e abre/fecha
+            toggle.addEventListener('click', (e) => {
+                if (isMobile()) {
+                    e.preventDefault(); //Impede que redirecione
+                    dropdown.classList.toggle('open'); //Abre ou fecha o submenu
+                }
+            });
+    
+            //Mostra/Esconde o submenu no desktop com hover
+            dropdown.addEventListener('mouseover', () => {
+                if (!isMobile()) {
+                    dropdown.classList.add('open');
+                }
+            });
+
+            dropdown.addEventListener('mouseout', () => {
+                if (!isMobile()) {
+                    dropdown.classList.remove('open');
+                }
+            });
+
+            //Mostra o submenu ao passar o mouse
+            dropdown.addEventListener('mouseover', () => {
+                dropdown.classList.add('open');
+            });
+
+            //Esconde o submenu ao retirar o cursor
+            dropdown.addEventListener('mouseout', () => {
+                dropdown.classList.remove('open');
+            });
+        });
+
+        // Função para mostrar o botão apenas quando a página for rolada p/ baixo
+        const btnTopo = document.getElementById('btn-topo');
+
+        // Verificar posição de rolagem após carregamento da página
+        if (window.scrollY > 420) {
+            btnTopo.style.opacity = 1; //Exibe o botão se tiver rolado
+        } else {btnTopo.style.opacity = 0} //Esconde o botão no topo
+
+        // Adicionar evento de rolagem para controlar visibilidade
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 420) {
+                btnTopo.style.opacity = 1;
+            } else {
+                btnTopo.style.opacity = 0;
+            }
+        });
+
+        // Função p/ rolar até o topo quando o botão for clicado
+        document.getElementById('btn-topo').addEventListener ('click', () =>{
+            event.preventDefault(); //Previne o comportamento padrão do link
+            window.scrollTo ({
+                top: 0, behavior: 'smooth' //Rola até o ropo de forma suave
+            });
+        });
+
+        document.getElementById('btn-produtos').addEventListener ('click', () =>{
+            event.preventDefault(); //Previne o comportamento padrão do link
+            document.querySelector('#produtos').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'  //Alinha
+            })
+        });
+
+        // Função para abrir o menu hamburguer no mobile
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('open'); //Adiciona ou remove a classe "open"
+        }
+
+        // Função p/ mostrar pop-up de aviso de privacidade
+        document.querySelector('.footer-privacy').addEventListener('click', function () {
+            Swal.fire({
+                title: 'Aviso de privacidade.',
+                text: 'Este site utiliza cookies para garantir que você tenha uma melhor experiência.',
+                icon: 'info',
+                confirmButtonText: 'Entendi!',
+                confirmButtonColor: '#007bff',
+            });
+        });
+    </script>
+    
+    <script>
+        AOS.init({
+            duration: 1200, // Duração das animações (em ms)
+            once: true, // Anima apenas uma vez ao entrar na tela
+            offset: 50 // Distância do elemento para iniciar a animação
+        });
+    </script>
+    
+</body>
+</html>
