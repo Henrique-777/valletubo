@@ -502,13 +502,12 @@ div .ver-mais a {
 
 .catalogo .ver-mais .btn {
     box-shadow: none;
-    background-color: #ffffff00;
-    border: 1px solid #0056b3;
-    color: #0056b3;
+    background: linear-gradient(to left, #0059ac, #167be7);
+    color: white;
     padding: 0.8rem 2rem;
-    border-radius: 10px;
+    border-radius: 25px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
 
