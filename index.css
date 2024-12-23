@@ -532,6 +532,7 @@ div .ver-mais a {
    z-index: 1000;
 }
 
+
 /* Estilização do conteúdo do Modal */
 .modal-content {
     background: white;
@@ -554,7 +555,7 @@ div .ver-mais a {
     right: 15rem;
     font-size: 40px;
     cursor: pointer;
-    color: #007bff;
+    color: #55a4ff;
 }
 
 .close:hover {
@@ -896,9 +897,9 @@ div .ver-mais a {
     }
 
     .close {
-        top: 10px;
+        top: 15vh;
         right: 10px;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     #btn-topo {
@@ -1101,7 +1102,6 @@ div .ver-mais a {
 .swal2-popup {
     border-radius: 10px;
     background-color: #f9f9f9;
-   
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
