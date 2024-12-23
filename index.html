@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valletubo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -107,62 +107,57 @@
             <p>Explore uma ampla gama de produtos de alta qualidade, desenvolvidos para atender às necessidades mais exigentes do mercado.</p>
             <div class="grid">
 
-                <!-- Card Mangueiras e Conexões-->
-                <a href="catalogo-mangueiras.html" style="text-decoration: none;"
+                <!-- Card mangueira polietileno -->
+                <a 
+                    style="text-decoration: none;"
                     itemscope itemtype="https://schema.org/Product">
                     <div class="card">
                         <img src="assets/img/mangueira-polietileno.png" alt="Produto 1" 
                             itemprop="image">
                         <h3>Mangueira de polietileno</h3>
-                        <p>Qualidade garantida para aplicações em todas as situações.</p>
                         <meta itemprop="brand" content="Valletubo">
                         <meta itemprop="category" content="Mangueiras e Conexões">
                     </div>
                 </a>
                 
-                <a href="catalogo-mangueiras.html" style="text-decoration: none;">
+                <a style="text-decoration: none;">
                     <div class="card">
                         <img src="assets/img/micro-aspersor.png" alt="Produto 2">
                         <h3>Micro aspersores</h3>
-                        <p>Soluções para todos os tipos de sistemas de irrigação.</p>
                     </div>
                 </a>
 
-                <a href="catalogo-mangueiras.html" style="text-decoration: none;">
+                <a style="text-decoration: none;">
                     <div class="card">
                         <img src="assets/img/microtubo.png" alt="Produto 3">
                         <h3>Microtubos</h3>
-                        <p>Qualidade garantida para aplicações em todas as situações.</p>
                     </div>
                 </a>
                 
-                <a href="irrigacao.html" style="text-decoration: none;">
+                <a style="text-decoration: none;">
                     <div class="card">
                         <img src="assets/img/tubo-rigido.png" alt="Produto 4">
                         <h3>Tubos rígidos</h3>
-                        <p>Soluções para todos os tipos de sistemas de irrigação.</p>
                     </div>
                 </a>
         
-                <a href="irrigacao.html" style="text-decoration: none;">
+                <a style="text-decoration: none;">
                     <div class="card">
                         <img src="assets/img/registro-esfera-rosca-interna.jpg" alt="Produto 5">
                         <h3>Registros de esfera</h3>
-                        <p>Qualidade garantida para aplicações em todas as situações.</p>
                     </div>
                 </a>
                 
-                <a href="irrigacao.html" style="text-decoration: none;">
+                <a style="text-decoration: none;">
                     <div class="card">
                         <img src="assets/img/joelho-90-soldavel.png" alt="Produto 6">
                         <h3>Joelhos</h3>
-                        <p>Soluções para todos os tipos de sistemas de irrigação.</p>
                     </div>
                 </a>
                 
             </div>
             <div class="ver-mais">
-                <a href="produtos.html" class="btn">Ver Mais</a>
+                <a href="produtos.html" class="btn">Ver catálogos</a>
             </div>
         </div>
     </section>
@@ -305,6 +300,20 @@
         <a href="#topo">↑</a>
     </div>
 
+    <div id="product-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span id="modal-close" class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Produto" class="modal-image">
+                <div class="modal-info">
+                    <h3 id="modal-title"> </h3>
+                    <p id="modal-sizes"> </p>
+                    <button id="quote-btn" class="btn">Solicitar orçamento!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- JavaScript -->
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
@@ -399,6 +408,94 @@
                 confirmButtonColor: '#007bff',
             });
         });
+
+        // Conteúdo do modal
+        const productData = {
+            //Mangueira de polietileno
+            "produto1": {
+                image: "assets/img/mangueira-polietileno.png",
+                title: "Mangueira de polietileno",
+                sizes: "16MM - 50M <br> 16MM - 200M <br> 1/2 - 100M <br> 3/4 - 100M <br> 1\" - 100M <br> 1.1/4\" - 50M <br> 1.1/2\" - 50M <br> Tubo PEBD DI 40MM - 6M"
+            }, 
+            //Micro aspersores
+            "produto2": {
+                image: "assets/img/micro-aspersor.png",
+                title: "Micro aspersor",
+                sizes: "50L/H - Cinza <br> 75L/H - Marrom <br> 100L/H - Laranja <br> 120L/H - Azul",
+            },
+            //Microtubo
+            "produto3": {
+                image:"assets/img/microtubo.png",
+                title:"Microtubo",
+                sizes:"4/6 x 100 CM com conector"
+            },
+            //Tubos rígidos
+            "produto4": {
+                image:"assets/img/tubo-rigido.png",
+                title:"Tubos PVC Rígidos",
+                sizes:"PN40 - 35MM a 100MM <br> PN60 - 32MM a 100MM <br> PN80 - 50MM a 100MM"
+            },
+            //Registros 
+            "produto5": {
+                image: "assets/img/registro-esfera-rosca-externa.png",
+                title: "Registros esfera",
+                sizes: "Consultar tamanhos."
+            },
+            //Joelhos
+            "produto6": {
+                image: "assets/img/joelho-90-soldavel.png",
+                title: "Joelhos e curvas",
+                sizes: "Consultar tamanhos."
+            }
+        }
+
+        // Função para abrir o modal
+        function openModal(productKey) {
+            const modal = document.getElementById("product-modal");
+            const data = productData[productKey];
+
+            if (data) {
+                document.getElementById("modal-image").src = data.image;
+                document.getElementById("modal-title").textContent = data.title;
+                document.getElementById("modal-sizes").innerHTML = data.sizes;
+                modal.style.display = "flex";
+            }
+        };
+
+        // Fechar o modal
+        document.getElementById("modal-close").onclick = () => {
+            document.getElementById("product-modal").style.display = "none";
+        };
+
+        // Fechar ao clicar fora do modal
+        window.onclick = (event) => {
+            const modal = document.getElementById("product-modal");
+            if (event.targe === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // Selecionar todos os cards na seção de produtos
+            const cards = document.querySelectorAll(".catalogo .card");
+
+            // Verificar se os cards foram encontrados
+            if (cards.length === 0) {
+                console.error("Nenhum card encontrado na seção de produtos!");
+                return;
+            }
+
+            // Adicionar os botões "Ver Mais" dinamicamente
+            cards.forEach((card, index) => {
+                const button = document.createElement("button");
+                button.textContent = "VER MAIS";
+                button.className = "btn-ver-mais"; //adicionar classe ao CSS
+                button.onclick = () => openModal(`produto${index + 1}`); // Conecta ao modal
+                card.appendChild(button);
+            });
+        });
+
+
     </script>
     
     <script>
@@ -408,6 +505,8 @@
             offset: 50 // Distância do elemento para iniciar a animação
         });
     </script>
+
+
     
 </body>
 </html>
