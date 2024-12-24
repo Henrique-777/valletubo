@@ -42,32 +42,35 @@ body {
 
 /* Estilo geral da seção da imagem */
 .capa {
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
     position: relative;
     width: 100%;
     height: calc(100vh - 80px);
     background: url('assets/img/capa-site.png') no-repeat center center/cover;
     background-size: contain;
-    display: flex-start;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .botao-central {
+    position: absolute;
     display: flex;
-    margin-top: 0.1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 90%;
     align-items: center;
     justify-content: center;
     width: 200px;
     height: 50px;
-    background-color: #007bfff6;
+    background: linear-gradient(to right, #004085, #007bff);
     border-radius: 25px;
     overflow: hidden;
     cursor: pointer;
-    position: absolute;
     color: white;
-    top: 90%;
-    left: 40%;
+    margin-top: auto;
+    margin-bottom: 10%;
 }
 
 .botao-central a {
@@ -75,7 +78,7 @@ body {
 }
 
 .botao-central:hover {
-    background: linear-gradient(to right, #0059ac, #167be7);
+    background: radial-gradient(#007bff,#004085);
 }
 
 .botao-central .button-text {
@@ -741,8 +744,7 @@ div .ver-mais a {
     padding: 10px 20px;
 }
 
-/* Estilo para o botão hamburguer */
-
+/* Estilo para o botão hamburguer no PC */
 .hamburguer-menu {
     display: none;
     font-size: 30px;
@@ -784,6 +786,7 @@ div .ver-mais a {
     .capa {
         background: url('assets/img/capa-site-mobile.png') no-repeat center center/cover;
         background-size: contain;
+        margin-top: -15%;
     }
 
     .capa .container {
