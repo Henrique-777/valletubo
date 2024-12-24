@@ -57,7 +57,7 @@ body {
 .botao-central {
     position: absolute;
     display: flex;
-    left: 50%;
+    left: 43%;
     transform: translate(-50%, -50%);
     top: 90%;
     align-items: center;
