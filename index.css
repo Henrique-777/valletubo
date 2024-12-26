@@ -624,14 +624,14 @@ div .ver-mais a {
     background-color: white;
     color: #ff7b00;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 6px;
 }
 
 .btn-ver-mais:hover {
     background: linear-gradient(to right, #ff7b00, #ffd000);
     color: white;
     border-color: #ffffff;;
-    
+    border-radius: 10px;
 }
 
 /* Fornecedores */
