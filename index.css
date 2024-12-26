@@ -64,7 +64,7 @@ body {
     justify-content: center;
     width: 200px;
     height: 50px;
-    background: linear-gradient(to right, #004085, #007bff);
+    background-color: #004085;
     border-radius: 25px;
     overflow: hidden;
     cursor: pointer;
@@ -78,7 +78,7 @@ body {
 }
 
 .botao-central:hover {
-    background: radial-gradient(#007bff,#004085);
+    background-color: #0052aa;
 }
 
 .botao-central .button-text {
@@ -212,8 +212,8 @@ body {
 }
 
 .empresa-imagem .text .btn:hover {
-    background: radial-gradient(circle, #0059ac, #167be7);
-    transform: translateY(-5px);
+    transform: scale(1.05);
+    transition: 0.9s ease;
 }
 
 
@@ -376,41 +376,6 @@ div .ver-mais a {
 }
 
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, #0056b3, #007bff); /* Degradê azul */
-    color: #fff;
-    text-align: center;
-    padding: 4rem 1rem;
-}
-
-.hero h2 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.hero .btn {
-    background-color: #11396d;
-    color: #fff;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: background 0.3s ease;
-}
-
-.hero .btn:hover {
-    background-color: #0082d9;
-}
-
 /* Resumo do Catálogo */
 .catalogo {
     background-color: #f9f9f9;
@@ -505,7 +470,7 @@ div .ver-mais a {
 
 .catalogo .ver-mais .btn {
     box-shadow: none;
-    background: linear-gradient(to left, #0059ac, #167be7);
+    background-color: #0f5bff;
     color: white;
     padding: 0.8rem 2rem;
     border-radius: 25px;
@@ -515,7 +480,7 @@ div .ver-mais a {
 }
 
 .catalogo .ver-mais .btn:hover {
-    background: linear-gradient(to right, #0059ac, #167be7);
+    background-color: #167be7;
     color: white;
     border: none;
 }
@@ -632,6 +597,7 @@ div .ver-mais a {
     color: white;
     border-color: #ffffff;;
     border-radius: 10px;
+    
 }
 
 /* Fornecedores */
@@ -991,6 +957,43 @@ div .ver-mais a {
     }
 
 }
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0056b3, #007bff); /* Degradê azul */
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background-color: #11396d;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #0082d9;
+}
+
 
 /* Footer */
 .footer {
