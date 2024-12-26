@@ -129,7 +129,7 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.02);
 }
 
 .card img {
@@ -175,8 +175,8 @@ body {
     margin: 1rem auto;
 }
 
-#btn-comprar:hover {
-    background-color: rgb(252, 207, 124);
+.card #btn-comprar:hover {
+    background: radial-gradient(orange rgb(255, 217, 0));
 }
 
 #btn-comprar a {
