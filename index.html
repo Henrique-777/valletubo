@@ -162,7 +162,7 @@
         </div>
     </section>
 
-    <!-- Seção de Imagem da Empresa -->
+    <!-- Seção de Imagem da Empresa 
     <section class="empresa-imagem" >
         <div class="container">
             <div class="text">
@@ -171,7 +171,7 @@
                 <a href="produtos.html" class="btn" data-aos="fade-up">CONHEÇA NOSSOS PRODUTOS</a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Fornecedores Section -->
     <section class="fornecedores" data-name="fornecedores">
@@ -497,6 +497,15 @@
     </script>
     
     <script>
+        // Redirecionamento do botão Solicitar Orçamento
+        document.getElementById('quote-btn').addEventListener('click', 
+            function() {
+                window.location.href = 'https://wa.me/558781712943';
+            });
+    </script>
+
+    <script>
+        // Animações do data.aos
         AOS.init({
             duration: 1200, // Duração das animações (em ms)
             once: true, // Anima apenas uma vez ao entrar na tela
