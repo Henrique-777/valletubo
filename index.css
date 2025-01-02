@@ -602,7 +602,7 @@ div .ver-mais a {
 
 /* Fornecedores */
 .fornecedores {
-    background-color: #eeeeee;
+    background: linear-gradient(to bottom,#f9f9f9,#d6d6d6);
     padding: 4rem 1rem;
     text-align: center;
 }
