@@ -84,6 +84,13 @@ const CatalogoIrrigacao = () => {
       tamanhos: ['JOELHO 90º ROSCÁVEL - 3/4"']
     },
     {
+      id: 81,
+      nome: "JOELHO 90º - ROSCÁVEL E SOLDÁVEL",
+      imagem: "assets/img/joelho-90-reducao-25mmx3.4.png",
+      especificacoes: ['Material: PVC'],
+      tamanhos: ['JOELHO 90° REDUÇÃO LR 25MMX3/4"']
+    },
+    {
       id: 9,
       nome: "TEE 90º - SOLDÁVEL",
       imagem: "assets/img/tee-32.png",
@@ -144,7 +151,21 @@ const CatalogoIrrigacao = () => {
       nome: "LUVA LR",
       imagem: "assets/img/luva-lr-50x1.1-2.png",
       especificacoes: ['Material: PVC'],
-      tamanhos: ['LUVA LR 50x1.1/2"','LUVA LR 1"', 'LUVA LR 1/2"']
+      tamanhos: ['LUVA LR 50x1.1/2"']
+    },
+    {
+      id: 150,
+      nome: "LUVA ROSCÁVEL",
+      imagem: "assets/img/luva-roscavel-1.2'.png",
+      especificacoes: ['Material: PVC'],
+      tamanhos: ['LUVA ROSCÁVEL 1"', 'LUVA ROSCÁVEL 1/2"']
+    },
+    {
+      id: 151,
+      nome: "LUVA LONGA",
+      imagem: "assets/img/luva-longa.png",
+      especificacoes: ['Material: PVC'],
+      tamanhos: ['LUVA LONGA 50MM', 'LUVA LONGA 75MM', 'LUVA LONGA 100MM']
     },
     {
       id: 16,

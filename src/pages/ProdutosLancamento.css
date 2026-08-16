@@ -162,7 +162,7 @@
    ======================================== */
 
 .grid-produtos-lancamento {
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 2.5rem;
@@ -186,7 +186,6 @@
   opacity: 0;
   transform: translateY(30px);
   width: 100%;
-  max-width: 400px;  /* ADICIONE ESTA LINHA */
 }
 .card-produto-lancamento.animar {
   opacity: 1;

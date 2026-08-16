@@ -75,6 +75,36 @@ const ProdutosLancamento = () => {
       destaque: "Novidade",
       caracteristicas: ['TEE ROSCÁVEL 90º - 3/4"', 'TEE ROSCÁVEL 90º - 1/2"'],
       badge: "LANÇAMENTO"
+    },
+    {
+      id: 6,
+      nome: "Luva Roscável",
+      imagem: "assets/img/luva-roscavel-1.2'.png",
+      descricao: "Luva Roscável",
+      categoria: "Sistemas de Irrigação",
+      destaque: "Novidade",
+      caracteristicas: ['LUVA ROSCÁVEL 1"', 'LUVA ROSCÁVEL 1/2"'],
+      badge: "LANÇAMENTO"
+    },
+    {
+      id: 7,
+      nome: "Joelho PVC Roscável e Soldável",
+      imagem: "assets/img/joelho-90-reducao-25mmx3.4.png",
+      descricao: "Joelho de PVC Roscável e Soldável",
+      categoria: "Sistemas de Irrigação",
+      destaque: "Novidade",
+      caracteristicas: ['JOELHO 90° REDUÇÃO LR 25MMX3/4"'],
+      badge: "LANÇAMENTO"
+    },
+    {
+      id: 8,
+      nome: "Luva Longa",
+      imagem: "assets/img/luva-longa.png",
+      descricao: "Luva Longa de PVC",
+      categoria: "Sistemas de Irrigação",
+      destaque: "Novidade",
+      caracteristicas: ['LUVA LONGA 50MM', 'LUVA LONGA 75MM', 'LUVA LONGA 100MM'],
+      badge: "LANÇAMENTO"
     }
   ];
 

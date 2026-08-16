@@ -16,15 +16,15 @@ const Home = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [slides, setSlides] = useState([]);
 
-  // Modal abre SEMPRE ao carregar a página
-  useEffect(() => {
-    // Delay de 500ms para suavizar a abertura
-    const timer = setTimeout(() => {
-      setModalPromoAberto(true);
-    }, 500);
+  // // Modal abre SEMPRE ao carregar a página
+  // useEffect(() => {
+  //   // Delay de 500ms para suavizar a abertura
+  //   const timer = setTimeout(() => {
+  //     setModalPromoAberto(true);
+  //   }, 500);
 
-    return () => clearTimeout(timer);
-  }, []); // Array vazio = executa apenas no mount (toda vez que a página carregar)
+  //   return () => clearTimeout(timer);
+  // }, []); // Array vazio = executa apenas no mount (toda vez que a página carregar)
 
   // Função para fechar modal promocional
   const fecharModalPromo = () => {
@@ -193,6 +193,13 @@ const Home = () => {
   ];
 
   const abrirModal = (produto) => {
+    // Se id == 6, redirecionar à página de conexões PVC
+    if (produto.id === 6) {
+      navigate('/CatalogoIrrigacao');
+      window.scrollTo(0, 0);
+      return;
+    }
+
     setProdutoSelecionado(produto);
     setModalAberto(true);
     document.body.style.overflow = 'hidden'; // Previne scroll do body
@@ -516,6 +523,39 @@ const Home = () => {
             <h3>Tee 90º - Roscável</h3>
             <button onClick={() => navigate('/ProdutosLancamento')} className="lancamento-btn">Saiba Mais</button>
           </div>
+
+          
+
+          <div className="lancamento-card">
+            <span className="badge-novo">LANÇAMENTO</span>
+            <img 
+              src="assets/img/luva-roscavel-1.2'.png" 
+              alt="Luva Roscavel" 
+            />
+            <h3>Luva Roscável</h3>
+            <button onClick={() => navigate('/ProdutosLancamento')} className="lancamento-btn">Saiba Mais</button>
+          </div>
+
+          <div className="lancamento-card">
+            <span className="badge-novo">LANÇAMENTO</span>
+            <img 
+              src="assets/img/joelho-90-reducao-25mmx3.4.png" 
+              alt="Joelho Roscavel e Soldável" 
+            />
+            <h3>Joelho Roscável e Soldável</h3>
+            <button onClick={() => navigate('/ProdutosLancamento')} className="lancamento-btn">Saiba Mais</button>
+          </div>
+
+          <div className="lancamento-card">
+            <span className="badge-novo">LANÇAMENTO</span>
+            <img 
+              src="assets/img/luva-longa.png" 
+              alt="Luva Longa" 
+            />
+            <h3>Luva Longa</h3>
+            <button onClick={() => navigate('/ProdutosLancamento')} className="lancamento-btn">Saiba Mais</button>
+          </div>
+
         </div>
       </section>
 
