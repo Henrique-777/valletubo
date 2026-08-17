@@ -469,7 +469,7 @@ const Home = () => {
       {/* Seção de Exclusividades */}
       <section className="lancamentos" id="lancamentos">
         <h2>Exclusividades</h2>
-        <p>Confira as últimas novidades em produtos para irrigação</p>
+        <p>Confira nossos últimos lançamentos</p>
         
         <div className="lancamentos-grid">
           <div className="lancamento-card">
@@ -484,7 +484,7 @@ const Home = () => {
           </div>
 
           <div className="lancamento-card">
-            <span className="badge-novo">LANÇAMENTO</span>
+            {/* <span className="badge-novo">LANÇAMENTO</span> */}
             <img 
               src="assets/img/tubo-de-comando.png" 
               alt="Tubo de comando para automação" 
@@ -495,7 +495,7 @@ const Home = () => {
           </div>
 
           <div className="lancamento-card">
-            <span className="badge-novo">LANÇAMENTO</span>
+            {/* <span className="badge-novo">LANÇAMENTO</span> */}
             <img 
               src="assets/img/colar-de-tomada-3.4.webp" 
               alt="Colar de Tomada" 
@@ -505,7 +505,7 @@ const Home = () => {
           </div>
 
           <div className="lancamento-card">
-            <span className="badge-novo">LANÇAMENTO</span>
+            {/* <span className="badge-novo">LANÇAMENTO</span> */}
             <img 
               src="assets/img/joelho-roscavel.png" 
               alt="Joelho Roscável" 
@@ -515,7 +515,7 @@ const Home = () => {
           </div>
 
           <div className="lancamento-card">
-            <span className="badge-novo">LANÇAMENTO</span>
+            {/* <span className="badge-novo">LANÇAMENTO</span> */}
             <img 
               src="assets/img/tee-roscavel.png" 
               alt="Tee Roscavel" 
@@ -527,7 +527,7 @@ const Home = () => {
           
 
           <div className="lancamento-card">
-            <span className="badge-novo">LANÇAMENTO</span>
+            {/* <span className="badge-novo">LANÇAMENTO</span> */}
             <img 
               src="assets/img/luva-roscavel-1.2'.png" 
               alt="Luva Roscavel" 
@@ -537,7 +537,7 @@ const Home = () => {
           </div>
 
           <div className="lancamento-card">
-            <span className="badge-novo">LANÇAMENTO</span>
+            {/* <span className="badge-novo">LANÇAMENTO</span> */}
             <img 
               src="assets/img/joelho-90-reducao-25mmx3.4.png" 
               alt="Joelho Roscavel e Soldável" 
@@ -547,7 +547,7 @@ const Home = () => {
           </div>
 
           <div className="lancamento-card">
-            <span className="badge-novo">LANÇAMENTO</span>
+            {/* <span className="badge-novo">LANÇAMENTO</span> */}
             <img 
               src="assets/img/luva-longa.png" 
               alt="Luva Longa" 

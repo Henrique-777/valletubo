@@ -41,7 +41,7 @@ const ProdutosLancamento = () => {
       caracteristicas: [
         "TUBO DE COMANDO PARA AUTOMAÇÃO 8MM"
       ],
-      badge: "LANÇAMENTO"
+      // badge: "LANÇAMENTO"
     },
     {
       id: 3,
@@ -54,7 +54,7 @@ const ProdutosLancamento = () => {
         'COLAR DE TOMADA 50MM C/ ROSCA 3/4"', 'COLAR DE TOMADA 75MM C/ ROSCA 3/4"',
         'COLAR DE TOMADA 100MM C/ ROSCA 3/4"'
       ],
-      badge: "LANÇAMENTO"
+      // badge: "LANÇAMENTO"
     },
     {
       id: 4,
@@ -64,7 +64,7 @@ const ProdutosLancamento = () => {
       categoria: "Sistemas de Irrigação",
       destaque: "Novidade",
       caracteristicas: ['JOELHO 90º ROSCÁVEL - 3/4"'],
-      badge: "LANÇAMENTO"
+      // // badge: "LANÇAMENTO"
     },
     {
       id: 5,
@@ -74,7 +74,7 @@ const ProdutosLancamento = () => {
       categoria: "Sistemas de Irrigação",
       destaque: "Novidade",
       caracteristicas: ['TEE ROSCÁVEL 90º - 3/4"', 'TEE ROSCÁVEL 90º - 1/2"'],
-      badge: "LANÇAMENTO"
+      // badge: "LANÇAMENTO"
     },
     {
       id: 6,
@@ -84,7 +84,7 @@ const ProdutosLancamento = () => {
       categoria: "Sistemas de Irrigação",
       destaque: "Novidade",
       caracteristicas: ['LUVA ROSCÁVEL 1"', 'LUVA ROSCÁVEL 1/2"'],
-      badge: "LANÇAMENTO"
+      // badge: "LANÇAMENTO"
     },
     {
       id: 7,
@@ -94,7 +94,7 @@ const ProdutosLancamento = () => {
       categoria: "Sistemas de Irrigação",
       destaque: "Novidade",
       caracteristicas: ['JOELHO 90° REDUÇÃO LR 25MMX3/4"'],
-      badge: "LANÇAMENTO"
+      // badge: "LANÇAMENTO"
     },
     {
       id: 8,
@@ -104,7 +104,7 @@ const ProdutosLancamento = () => {
       categoria: "Sistemas de Irrigação",
       destaque: "Novidade",
       caracteristicas: ['LUVA LONGA 50MM', 'LUVA LONGA 75MM', 'LUVA LONGA 100MM'],
-      badge: "LANÇAMENTO"
+      // badge: "LANÇAMENTO"
     }
   ];
 
@@ -179,7 +179,10 @@ const ProdutosLancamento = () => {
               className={`card-produto-lancamento ${animarCards ? 'animar' : ''}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="badge-lancamento">{produto.badge}</div>
+              {/* Renderiza a div da badge apenas se produto.badge existir */}
+              {produto.badge && (
+                <div className="badge-lancamento">{produto.badge}</div>
+              )}
               
               <div className="card-imagem-wrapper">
                 <img
