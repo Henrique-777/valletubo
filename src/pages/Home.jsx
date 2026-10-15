@@ -556,6 +556,16 @@ const Home = () => {
             <button onClick={() => navigate('/ProdutosLancamento')} className="lancamento-btn">Saiba Mais</button>
           </div>
 
+          <div className="lancamento-card">
+            {<span className="badge-novo">LANÇAMENTO</span>}
+            <img 
+              src="assets/img/mangueira-gotejadora.png" 
+              alt="Mangueira Gotejadora" 
+            />
+            <h3>Mangueira Gotejadora</h3>
+            <button onClick={() => navigate('/ProdutosLancamento')} className="lancamento-btn">Saiba Mais</button>
+          </div>
+
         </div>
       </section>
 

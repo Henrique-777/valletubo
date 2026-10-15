@@ -16,6 +16,14 @@ const CatalogoMangueiras = () => {
         "MANGUEIRA 3/4- 100M", "MANGUEIRA 1' - 100M", "MANGUEIRA 1.1/4' - 50M", "MANGUEIRA 1.1/2' - 50M", "MANGUEIRA 1x3.00MM", "TUBO PEBDA DI 40MM - 6M"],
       especificacoes: ["Material: Polietileno"],
       aplicacoes: ["Irrigação", "Sistemas agrícolas", "Hortas"]
+    },{
+      id: 1.2,
+      nome: "MANGUEIRA GOTEJADORA",
+      imagem: "assets/img/mangueira-gotejadora.png",
+      descricao: "Mangueira Gotejadora de alta eficiência para irrigação localizada, garantindo economia de água e nutrientes.",
+      tamanhos: ['MANGUEIRA GOTEJADORA 2.7 L/H', 'MANGUEIRA GOTEJADORA 4.0 L/H'],
+      //especificacoes: ["Material: Polietileno"],
+      aplicacoes: ["Irrigação", "Sistemas agrícolas", "Hortas"]
     },
     {
       id: 2,

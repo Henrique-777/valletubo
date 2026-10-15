@@ -105,6 +105,16 @@ const ProdutosLancamento = () => {
       destaque: "Novidade",
       caracteristicas: ['LUVA LONGA 50MM', 'LUVA LONGA 75MM', 'LUVA LONGA 100MM'],
       // badge: "LANÇAMENTO"
+    },
+    {
+      id: 9,
+      nome: "Mangueira Gotejadora",
+      imagem: "assets/img/mangueira-gotejadora.png",
+      descricao: "Mangueira Gotejadora de alta eficiência para irrigação localizada, garantindo economia de água e nutrientes.",
+      categoria: "Sistemas de Irrigação",
+      destaque: "Novidade",
+      caracteristicas: ['MANGUEIRA GOTEJADORA 2.7 L/H', 'MANGUEIRA GOTEJADORA 4.0 L/H'],
+      badge: "LANÇAMENTO",
     }
   ];
 
