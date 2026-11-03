@@ -1,0 +1,737 @@
+/* Container principal da página */
+.transp-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Hero Image Section */
+.transp-hero {
+  position: relative;
+  background: url('/assets/img/entregas.webp') center/cover no-repeat;
+  height: 300px;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 2rem;
+}
+
+.transp-overlay {
+  background-color: rgba(34, 116, 224, 0.699);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+.transp-hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.transp-hero p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Containers (mesmo padrão do Sobre) */
+.transp-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Seção informativa */
+.transp-info {
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.transp-conteudo {
+  margin-bottom: 2rem;
+}
+
+.transp-info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #135caa;
+}
+
+.transp-info p {
+  text-align: left;
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Rota logística: fábrica > transportadora > cliente */
+.transp-rota {
+  list-style: none;
+  margin: 3rem 0 2rem;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.transp-rota-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.transp-etapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  max-width: 220px;
+}
+
+.transp-etapa h3 {
+  font-size: 1.3rem;
+  color: #2576cc;
+  font-weight: 600;
+  margin: 0;
+}
+
+.transp-info .transp-etapa p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+}
+
+.transp-seta {
+  color: #2576cc;
+  font-size: 1.5rem;
+}
+
+/* Citação destacada */
+.transp-destaque {
+  margin: 2rem 0 0;
+  padding: 1.5rem 2rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid #2576cc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.transp-destaque i {
+  font-size: 2.5rem;
+  color: #2576cc;
+}
+
+.transp-info .transp-destaque p {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #135caa;
+  line-height: 1.5;
+}
+
+/* Vantagens */
+.transp-vantagens-section {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.transp-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #135caa;
+  margin-bottom: 2rem;
+}
+
+.transp-vantagens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.transp-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.transp-card h3 {
+  font-size: 1.5rem;
+  color: #2576cc;
+  font-weight: 600;
+  margin: 0;
+}
+
+.transp-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+}
+
+/* Ícones */
+.transp-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+  background: #2576cc;
+  color: white;
+  flex-shrink: 0;
+}
+
+.transp-card:hover .transp-icon {
+  transform: scale(1.1);
+}
+
+/* CTA */
+.transp-cta-section {
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.transp-cta {
+  background-color: #2576cc;
+  color: #fff;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transp-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.transp-cta p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #fff;
+}
+
+.transp-botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #fff;
+  color: #135caa;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transp-botao i {
+  font-size: 1.4rem;
+}
+
+.transp-botao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.transp-botao:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* MEDIA QUERIES - RESPONSIVIDADE */
+
+/* Tablets e dispositivos médios (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .transp-hero {
+    height: 280px;
+  }
+
+  .transp-hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .transp-hero p {
+    font-size: 1.1rem;
+  }
+
+  .transp-vantagens {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .transp-titulo,
+  .transp-cta h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tablets pequenos (768px) */
+@media screen and (max-width: 768px) {
+  .transp-hero {
+    height: 250px;
+    margin-top: 50px;
+    padding: 1.5rem;
+  }
+
+  .transp-overlay {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .transp-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .transp-hero p {
+    font-size: 1rem;
+  }
+
+  .transp-info {
+    padding: 2.5rem 0;
+  }
+
+  .transp-container {
+    width: 95%;
+    padding: 0 1.5rem;
+  }
+
+  .transp-info h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .transp-info p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .transp-rota,
+  .transp-rota-item {
+    flex-direction: column;
+  }
+
+  .transp-rota {
+    gap: 1rem;
+  }
+
+  .transp-rota-item {
+    gap: 1rem;
+  }
+
+  .transp-seta {
+    transform: rotate(90deg);
+  }
+
+  .transp-destaque {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .transp-info .transp-destaque p {
+    text-align: center;
+    font-size: 1.15rem;
+  }
+
+  .transp-vantagens-section,
+  .transp-cta-section {
+    padding: 3rem 0;
+  }
+
+  .transp-titulo,
+  .transp-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .transp-vantagens {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .transp-card {
+    padding: 1.5rem;
+  }
+
+  .transp-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .transp-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2.2rem;
+  }
+}
+
+/* Smartphones (576px) */
+@media screen and (max-width: 576px) {
+  .transp-hero {
+    height: 220px;
+    margin-top: 45px;
+    padding: 1rem;
+  }
+
+  .transp-overlay {
+    padding: 1.2rem;
+    border-radius: 6px;
+  }
+
+  .transp-hero h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .transp-hero p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .transp-info {
+    padding: 2rem 0;
+  }
+
+  .transp-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .transp-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .transp-info p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .transp-vantagens-section,
+  .transp-cta-section {
+    padding: 2.5rem 0;
+  }
+
+  .transp-titulo,
+  .transp-cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .transp-vantagens {
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .transp-card {
+    padding: 1.2rem;
+    gap: 0.8rem;
+  }
+
+  .transp-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .transp-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .transp-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 2rem;
+  }
+
+  .transp-cta {
+    padding: 2rem 1.2rem;
+  }
+
+  .transp-botao {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+/* Smartphones pequenos (480px) */
+@media screen and (max-width: 480px) {
+  .transp-hero {
+    height: 200px;
+    margin-top: 4.5rem;
+  }
+
+  .transp-overlay {
+    padding: 1rem;
+  }
+
+  .transp-hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .transp-hero p {
+    font-size: 0.8rem;
+    font-weight: 450;
+  }
+
+  .transp-info {
+    padding: 1.5rem 0;
+  }
+
+  .transp-container {
+    padding: 0 0.8rem;
+  }
+
+  .transp-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .transp-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .transp-conteudo {
+    margin-bottom: 1.5rem;
+  }
+
+  .transp-vantagens-section,
+  .transp-cta-section {
+    padding: 2rem 0;
+  }
+
+  .transp-titulo,
+  .transp-cta h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .transp-vantagens {
+    gap: 1rem;
+  }
+
+  .transp-card {
+    padding: 1rem;
+  }
+
+  .transp-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .transp-card p {
+    font-size: 0.9rem;
+  }
+
+  .transp-icon {
+    width: 75px;
+    height: 75px;
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Smartphones muito pequenos (360px) */
+@media screen and (max-width: 360px) {
+  .transp-hero {
+    height: 180px;
+  }
+
+  .transp-hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .transp-hero p {
+    font-size: 0.85rem;
+  }
+
+  .transp-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .transp-info p {
+    font-size: 0.85rem;
+  }
+
+  .transp-titulo,
+  .transp-cta h2 {
+    font-size: 1.4rem;
+  }
+
+  .transp-card h3 {
+    font-size: 1rem;
+  }
+
+  .transp-card p {
+    font-size: 0.85rem;
+  }
+
+  .transp-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+}
+
+/* Orientação landscape para tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .transp-hero {
+    height: 240px;
+  }
+
+  .transp-vantagens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Telas muito grandes (1440px+) */
+@media screen and (min-width: 1440px) {
+  .transp-hero {
+    height: 350px;
+  }
+
+  .transp-overlay {
+    max-width: 900px;
+    padding: 2.5rem;
+  }
+
+  .transp-hero h2 {
+    font-size: 3.5rem;
+  }
+
+  .transp-hero p {
+    font-size: 1.3rem;
+  }
+
+  .transp-container {
+    max-width: 1400px;
+  }
+
+  .transp-vantagens {
+    gap: 2.5rem;
+  }
+}
+
+/* Suporte para hover em dispositivos que o suportam */
+@media (hover: hover) and (pointer: fine) {
+  .transp-card:hover,
+  .transp-botao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .transp-card:hover .transp-icon {
+    transform: scale(1.1);
+  }
+}
+
+/* Remove animações para usuários que preferem movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .transp-card,
+  .transp-icon,
+  .transp-botao {
+    transition: none;
+  }
+
+  .transp-card:hover,
+  .transp-card:hover .transp-icon,
+  .transp-botao:hover {
+    transform: none;
+  }
+
+  .transp-overlay {
+    backdrop-filter: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .transp-page {
+    overflow-x: visible;
+  }
+
+  .transp-hero {
+    height: auto;
+    padding: 2rem;
+    background: none;
+    color: black;
+  }
+
+  .transp-overlay {
+    background-color: transparent;
+    backdrop-filter: none;
+    color: black;
+  }
+
+  .transp-vantagens-section {
+    background-color: white;
+  }
+
+  .transp-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+
+  .transp-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .transp-cta {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #ddd;
+    box-shadow: none;
+  }
+
+  .transp-cta h2,
+  .transp-cta p {
+    color: black;
+  }
+
+  .transp-botao {
+    border: 1px solid #ddd;
+    box-shadow: none;
+  }
+}

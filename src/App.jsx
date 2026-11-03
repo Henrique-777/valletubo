@@ -8,6 +8,7 @@ import Produtos from './pages/Produtos';
 import CatalogoMangueiras from './pages/CatalogoMangueiras';
 import CatalogoIrrigacao from './pages/CatalogoIrrigacao';
 import ProdutosLancamento from './pages/ProdutosLancamento';
+import Transportadoras from './pages/Transportadoras';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/catalogoMangueiras" element={<CatalogoMangueiras />} />
         <Route path="/catalogoIrrigacao" element={<CatalogoIrrigacao />} />
         <Route path="/produtosLancamento" element={<ProdutosLancamento />} />
+        <Route path="/transportadoras" element={<Transportadoras />} />
       </Routes>
       <Footer />
     </Router>
