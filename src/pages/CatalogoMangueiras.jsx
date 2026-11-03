@@ -105,7 +105,7 @@ const CatalogoMangueiras = () => {
     },
     {
       id: 12,
-      nome: "CONECTOR INICIAL COM ANEL LISO",
+      nome: "CONECTOR INICIAL",
       imagem: "assets/img/conector-inicial.webp",
       descricao: "Conector Inicial",
       especificacoes: ['Variação 1: Anel Liso', 'Variação 2: Anel Garra'],
