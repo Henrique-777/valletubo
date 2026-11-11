@@ -1,43 +1,49 @@
 import './Transportadoras.css';
 
-// Ajuste o número (DDI + DDD + telefone, só dígitos) e a mensagem inicial.
-const WHATSAPP_NUMERO = '5587999999999';
-const WHATSAPP_MENSAGEM =
-  'Olá! Gostaria de cotar o frete por transportadora para um pedido de tubos e conexões.';
-const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(
-  WHATSAPP_MENSAGEM
-)}`;
+// Troque pelo link real de contato (rota interna ou WhatsApp).
+// Ex.: 'https://wa.me/55DDDNUMERO?text=Olá! Quero cotar um envio por transportadora.'
+const CONTATO_URL = '/contato';
 
-const etapas = [
-  { icone: 'fa-industry', titulo: 'Nossa fábrica', texto: 'Pedido separado e conferido' },
-  { icone: 'fa-truck-fast', titulo: 'Transportadora', texto: 'Coleta, transporte e rastreio' },
-  { icone: 'fa-location-dot', titulo: 'Seu endereço', texto: 'Entrega na cidade ou propriedade' },
+const PASSOS = [
+  {
+    titulo: 'Fale com a gente',
+    texto: 'Informe os produtos, as quantidades e a cidade de destino do pedido.',
+  },
+  {
+    titulo: 'Verificamos a viabilidade',
+    texto:
+      'Analisamos peso, dimensões e tipo de produto para confirmar se o envio por transportadora é possível.',
+  },
+  {
+    titulo: 'Você cota o frete',
+    texto:
+      'O valor e o prazo são definidos pela transportadora. O custo é pago por você, cliente.',
+  },
+  {
+    titulo: 'Despachamos o pedido',
+    texto:
+      'Com tudo confirmado, preparamos o pedido e entregamos à transportadora para seguir até o seu endereço.',
+  },
 ];
 
-const vantagens = [
+const INFORMACOES = [
   {
-    icone: 'fa-shield-halved',
-    titulo: 'Segurança',
+    icone: 'fa-hand-holding-dollar',
+    titulo: 'Frete por sua conta',
     texto:
-      'Tubos e conexões são embalados e paletizados para chegar íntegros, mesmo em trajetos longos.',
+      'A Valletubo não arca com os custos de envio. O valor do frete é de responsabilidade do cliente.',
   },
   {
-    icone: 'fa-box-open',
-    titulo: 'Grandes volumes',
+    icone: 'fa-ruler-combined',
+    titulo: 'Restrições de carga',
     texto:
-      'Ideal para rolos de mangueira, barras de PVC e lotes de conexões, com carga consolidada e frete proporcional.',
-  },
-  {
-    icone: 'fa-route',
-    titulo: 'Rastreio',
-    texto:
-      'Acompanhe o pedido da coleta até a entrega com o código de rastreio enviado pela nossa equipe.',
+      'Peças longas ou volumosas, como tubos de PVC de grande comprimento, podem não ser aceitas por transportadoras convencionais.',
   },
   {
     icone: 'fa-clock',
-    titulo: 'Agilidade',
+    titulo: 'Prazos da transportadora',
     texto:
-      'Despachamos assim que o pedido é confirmado. O prazo estimado é informado junto com a cotação.',
+      'Prazo de entrega e valor variam conforme o destino e a transportadora escolhida.',
   },
 ];
 
@@ -47,73 +53,81 @@ const Transportadoras = () => {
       {/* Hero */}
       <section className="transp-hero">
         <div className="transp-overlay">
-          <h2>Entregas por Transportadora</h2>
+          <h2>Envio por transportadoras</h2>
           <p>
-            Levamos tubos e conexões de irrigação até a sua cidade, com transporte seguro e rastreio
-            do pedido.
+            Entenda como funciona o envio dos nossos produtos por transportadora
+            e o que você precisa saber antes de pedir.
           </p>
         </div>
       </section>
 
-      {/* Como funciona */}
-      <section className="transp-info">
+      {/* Aviso principal */}
+      <section className="transp-section">
         <div className="transp-container">
-          <div className="transp-conteudo">
-            <h2>Como funciona o envio</h2>
-            <p>
-              Após a confirmação do pedido, separamos, embalamos e entregamos a carga a uma
-              transportadora parceira. Ela cuida do transporte até o destino, e você acompanha cada
-              etapa pelo código de rastreio.
-            </p>
+          <div className="transp-aviso" role="note">
+            <div className="transp-aviso-icone" aria-hidden="true">
+              <i className="fa-solid fa-circle-info"></i>
+            </div>
+            <div>
+              <h2>O frete é pago pelo cliente</h2>
+              <p>
+                Nos envios por transportadora, todo o custo do frete fica por
+                conta de quem compra. A fábrica não cobre despesas de envio.
+              </p>
+            </div>
           </div>
-
-          <div className="transp-conteudo">
-            <h2>Alcance e capilaridade</h2>
-            <p>
-              As transportadoras atendem cidades de diferentes regiões, inclusive locais de difícil
-              acesso para entregas comuns. Isso permite enviar grandes volumes de tubos, mangueiras
-              e conexões com custo e prazo compatíveis com a necessidade da obra ou da lavoura.
-            </p>
-          </div>
-
-          {/* Visual da rota logística */}
-          <ol className="transp-rota" aria-label="Etapas da entrega">
-            {etapas.map((etapa, i) => (
-              <li className="transp-rota-item" key={etapa.titulo}>
-                <div className="transp-etapa">
-                  <div className="transp-icon" aria-hidden="true">
-                    <i className={`fa-solid ${etapa.icone}`}></i>
-                  </div>
-                  <h3>{etapa.titulo}</h3>
-                  <p>{etapa.texto}</p>
-                </div>
-                {i < etapas.length - 1 && (
-                  <i className="fa-solid fa-chevron-right transp-seta" aria-hidden="true"></i>
-                )}
-              </li>
-            ))}
-          </ol>
-
-          {/* Citação destacada */}
-          <blockquote className="transp-destaque">
-            <i className="fa-solid fa-truck-fast" aria-hidden="true"></i>
-            <p>Do nosso galpão até a porteira da sua propriedade, com a carga acompanhada.</p>
-          </blockquote>
         </div>
       </section>
 
-      {/* Vantagens */}
-      <section className="transp-vantagens-section">
+      {/* Como funciona */}
+      <section className="transp-section transp-section-claro">
         <div className="transp-container">
-          <h2 className="transp-titulo">Por que enviar por transportadora</h2>
-          <div className="transp-vantagens">
-            {vantagens.map((item) => (
-              <div className="transp-card" key={item.titulo}>
-                <div className="transp-icon" aria-hidden="true">
-                  <i className={`fa-solid ${item.icone}`}></i>
+          <h2 className="transp-titulo">Como funciona</h2>
+          <ol className="transp-passos">
+            {PASSOS.map((passo, index) => (
+              <li className="transp-passo" key={passo.titulo}>
+                <span className="transp-passo-numero" aria-hidden="true">
+                  {index + 1}
+                </span>
+                <h3>{passo.titulo}</h3>
+                <p>{passo.texto}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Quais produtos */}
+      <section className="transp-section">
+        <div className="transp-container">
+          <div className="transp-texto">
+            <h2>Quais produtos podem ser enviados?</h2>
+            <p>
+              Itens menores e mais compactos, como conexões, microtubos e
+              microaspersores, costumam ser os mais indicados para esse tipo de
+              envio. Já produtos longos, pesados ou volumosos exigem análise
+              prévia e nem sempre são aceitos pelas transportadoras.
+            </p>
+            <p>
+              Por isso, antes de fechar o pedido, consulte a viabilidade do
+              envio com a nossa equipe.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pontos de atenção */}
+      <section className="transp-section transp-section-claro">
+        <div className="transp-container">
+          <h2 className="transp-titulo">Pontos de atenção</h2>
+          <div className="transp-cards">
+            {INFORMACOES.map((info) => (
+              <div className="transp-card" key={info.titulo}>
+                <div className="transp-card-icone" aria-hidden="true">
+                  <i className={`fa-solid ${info.icone}`}></i>
                 </div>
-                <h3>{item.titulo}</h3>
-                <p>{item.texto}</p>
+                <h3>{info.titulo}</h3>
+                <p>{info.texto}</p>
               </div>
             ))}
           </div>
@@ -121,22 +135,16 @@ const Transportadoras = () => {
       </section>
 
       {/* CTA */}
-      <section className="transp-cta-section">
+      <section className="transp-section">
         <div className="transp-container">
           <div className="transp-cta">
-            <h2>Cote o frete do seu pedido</h2>
+            <h2>Ficou com alguma dúvida?</h2>
             <p>
-              Informe sua cidade e os itens que precisa. Nossa equipe responde com valor e prazo
-              estimado de entrega.
+              Fale com a nossa equipe para fazer uma cotação e confirmar se o
+              seu pedido pode ser enviado por transportadora.
             </p>
-            <a
-              className="transp-botao"
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              Cotar frete no WhatsApp
+            <a className="transp-botao" href={CONTATO_URL}>
+              Tire suas dúvidas
             </a>
           </div>
         </div>
