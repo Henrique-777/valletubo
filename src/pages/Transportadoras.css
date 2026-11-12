@@ -1,564 +1,144 @@
-/* Página Transportadoras — mesma identidade visual do Sobre.
-   Todas as classes usam o prefixo "transp-" para não colidir com
-   .card, .container etc. definidas em outros arquivos CSS. */
+/* Classes com prefixo "transp-" para não colidir com o Sobre.css (que é global). */
 
 .transp-page {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
+  background-color: #f9f9f9;
 }
 
-/* Hero */
+/* ---------- Hero ---------- */
 .transp-hero {
-  position: relative;
   background: url('/assets/img/caixas.jpg') center/cover no-repeat;
-  height: 300px;
-  width: 100%;
+  min-height: clamp(200px, 28vw, 300px);
   margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  padding: 2rem;
+  padding: clamp(1rem, 4vw, 2rem);
 }
 
 .transp-overlay {
-  background-color: rgba(34, 116, 224, 0.699);
+  background-color: rgba(34, 116, 224, 0.7);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   color: #fff;
-  padding: 2rem;
   text-align: center;
   border-radius: 8px;
+  padding: clamp(1.2rem, 4vw, 2rem) clamp(1.5rem, 5vw, 3rem);
   max-width: 800px;
 }
 
 .transp-overlay h2 {
-  font-size: 3rem;
+  font-size: clamp(1.7rem, 5vw, 3rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  line-height: 1.15;
+  margin: 0;
 }
 
-.transp-overlay p {
-  font-size: 1.2rem;
-  font-weight: 300;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Seções */
-.transp-section {
-  padding: 3rem 0;
-  width: 100%;
-}
-
-.transp-section-claro {
-  background-color: #f9f9f9;
+/* ---------- Conteúdo central ---------- */
+.transp-conteudo {
+  padding: clamp(3rem, 9vw, 6rem) 0;
 }
 
 .transp-container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.transp-titulo {
-  font-size: 2.5rem;
-  font-weight: 700;
+  padding: 0 clamp(0.5rem, 3vw, 2rem);
   text-align: center;
-  color: #135caa;
-  margin-bottom: 2rem;
 }
 
-/* Aviso de frete */
-.transp-aviso {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  background-color: #eaf2fc;
-  border-left: 6px solid #2576cc;
-  border-radius: 8px;
-  padding: 1.5rem 2rem;
-}
-
-.transp-aviso-icone {
-  flex-shrink: 0;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: #2576cc;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-}
-
-.transp-aviso h2 {
-  font-size: 1.6rem;
+.transp-conteudo h2 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
   font-weight: 700;
+  line-height: 1.25;
   color: #135caa;
-  margin: 0 0 0.5rem;
+  margin: 0 0 1.25rem;
 }
 
-.transp-aviso p {
-  margin: 0;
-  color: #444;
-  font-size: 1.1rem;
-  line-height: 1.7;
-}
-
-/* Passos (sequência real) */
-.transp-passos {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-}
-
-.transp-passo {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.transp-passo-numero {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #2576cc;
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.transp-passo h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #2576cc;
-  margin: 0;
-}
-
-.transp-passo p {
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Texto corrido */
-.transp-texto h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #135caa;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.transp-texto p {
-  text-align: left;
+.transp-conteudo p {
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
   line-height: 1.8;
   color: #555;
-  font-size: 1.1rem;
-  max-width: 900px;
-  margin: 0 0 1rem;
+  max-width: 65ch;
+  margin: 0 auto clamp(2rem, 5vw, 3rem);
 }
 
-/* Cards */
-.transp-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.transp-card {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.transp-card-icone {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
+/* ---------- Botão WhatsApp ---------- */
+.transp-whatsapp {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
-  background: #2576cc;
+  gap: 0.75rem;
+  background-color: #25d366;
   color: #fff;
-}
-
-.transp-card h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #2576cc;
-  margin: 0;
-}
-
-.transp-card p {
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .transp-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-}
-
-/* CTA */
-.transp-cta {
-  background-color: #135caa;
-  color: #fff;
-  border-radius: 8px;
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.transp-cta h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0 0 1rem;
-}
-
-.transp-cta p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  max-width: 640px;
-  margin: 0 auto 2rem;
-  font-weight: 300;
-}
-
-.transp-botao {
-  display: inline-block;
-  background-color: #fff;
-  color: #135caa;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2.6vw, 1.2rem);
   font-weight: 700;
   text-decoration: none;
-  padding: 0.9rem 2.5rem;
-  border-radius: 8px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  padding: 1rem clamp(1.5rem, 5vw, 2.5rem);
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+  animation: transp-pulse 2s infinite;
+  transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
-.transp-botao:hover {
-  background-color: #eaf2fc;
+.transp-whatsapp i {
+  font-size: 1.6em;
 }
 
-.transp-botao:focus-visible {
-  outline: 3px solid #fff;
-  outline-offset: 3px;
+.transp-whatsapp:hover {
+  background-color: #1ebe5b;
+  transform: scale(1.04);
 }
 
-/* RESPONSIVIDADE */
+.transp-whatsapp:focus-visible {
+  outline: 3px solid #135caa;
+  outline-offset: 4px;
+}
 
-@media screen and (max-width: 1024px) {
+@keyframes transp-pulse {
+  0% {
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4), 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* ---------- Responsividade ---------- */
+@media (max-width: 768px) {
   .transp-hero {
-    height: 280px;
-  }
-
-  .transp-overlay h2 {
-    font-size: 2.5rem;
-  }
-
-  .transp-overlay p {
-    font-size: 1.1rem;
-  }
-
-  .transp-titulo {
-    font-size: 2.2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .transp-hero {
-    height: 250px;
     margin-top: 50px;
-    padding: 1.5rem;
-  }
-
-  .transp-overlay {
-    padding: 1.5rem;
-    max-width: 90%;
-  }
-
-  .transp-overlay h2 {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .transp-overlay p {
-    font-size: 1rem;
-  }
-
-  .transp-section {
-    padding: 2.5rem 0;
-  }
-
-  .transp-container {
-    width: 95%;
-    padding: 0 1.5rem;
-  }
-
-  .transp-titulo {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .transp-aviso {
-    padding: 1.25rem 1.5rem;
-    gap: 1rem;
-  }
-
-  .transp-aviso h2 {
-    font-size: 1.4rem;
-  }
-
-  .transp-aviso p,
-  .transp-texto p {
-    font-size: 1rem;
-  }
-
-  .transp-texto h2,
-  .transp-cta h2 {
-    font-size: 1.8rem;
-  }
-
-  .transp-passos,
-  .transp-cards {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .transp-card {
-    padding: 1.5rem;
-  }
-
-  .transp-card h3 {
-    font-size: 1.3rem;
-  }
-
-  .transp-card-icone {
-    width: 70px;
-    height: 70px;
-    font-size: 2.2rem;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 480px) {
   .transp-hero {
-    height: 220px;
-    margin-top: 45px;
-    padding: 1rem;
-  }
-
-  .transp-overlay {
-    padding: 1.2rem;
-    border-radius: 6px;
-  }
-
-  .transp-overlay h2 {
-    font-size: 1.7rem;
-    margin-bottom: 0.6rem;
-  }
-
-  .transp-overlay p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  .transp-section {
-    padding: 2rem 0;
-  }
-
-  .transp-container {
-    width: 100%;
-    padding: 0 1rem;
-  }
-
-  .transp-titulo {
-    font-size: 1.8rem;
-    margin-bottom: 1.2rem;
-  }
-
-  .transp-aviso {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .transp-texto h2 {
-    text-align: center;
-  }
-
-  .transp-cta {
-    padding: 2rem 1.25rem;
-  }
-
-  .transp-botao {
-    width: 100%;
-    padding: 0.9rem 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .transp-hero {
-    height: 200px;
     margin-top: 4.5rem;
   }
 
-  .transp-overlay {
-    padding: 1rem;
-  }
-
-  .transp-overlay h2 {
-    font-size: 1.5rem;
-  }
-
-  .transp-overlay p {
-    font-size: 0.85rem;
-    font-weight: 450;
-  }
-
-  .transp-container {
-    padding: 0 0.8rem;
-  }
-
-  .transp-titulo {
-    font-size: 1.5rem;
-  }
-
-  .transp-texto h2,
-  .transp-cta h2,
-  .transp-aviso h2 {
-    font-size: 1.4rem;
-  }
-
-  .transp-texto p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .transp-card h3,
-  .transp-passo h3 {
-    font-size: 1.2rem;
-  }
-
-  .transp-card-icone {
-    width: 65px;
-    height: 65px;
-    font-size: 1.9rem;
+  .transp-whatsapp {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 360px) {
-  .transp-overlay h2 {
-    font-size: 1.3rem;
-  }
-
-  .transp-titulo {
-    font-size: 1.4rem;
-  }
-
-  .transp-card p,
-  .transp-passo p {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .transp-hero {
-    height: 350px;
-  }
-
-  .transp-overlay {
-    max-width: 900px;
-    padding: 2.5rem;
-  }
-
-  .transp-overlay h2 {
-    font-size: 3.5rem;
-  }
-
-  .transp-overlay p {
-    font-size: 1.3rem;
-  }
-
-  .transp-container {
-    max-width: 1400px;
-  }
-}
-
-/* Movimento reduzido */
+/* ---------- Acessibilidade ---------- */
 @media (prefers-reduced-motion: reduce) {
-  .transp-card,
-  .transp-botao {
+  .transp-whatsapp {
+    animation: none;
     transition: none;
   }
 
-  .transp-card:hover {
+  .transp-whatsapp:hover {
     transform: none;
   }
 
   .transp-overlay {
+    -webkit-backdrop-filter: none;
     backdrop-filter: none;
-  }
-}
-
-/* Impressão */
-@media print {
-  .transp-hero {
-    height: auto;
-    background: none;
-    color: #000;
-  }
-
-  .transp-overlay {
-    background-color: transparent;
-    backdrop-filter: none;
-    color: #000;
-  }
-
-  .transp-section-claro {
-    background-color: #fff;
-  }
-
-  .transp-card,
-  .transp-passo {
-    box-shadow: none;
-    border: 1px solid #ddd;
-    break-inside: avoid;
-  }
-
-  .transp-cta {
-    background: none;
-    color: #000;
-    border: 1px solid #ddd;
-  }
-
-  .transp-botao {
-    display: none;
   }
 }
